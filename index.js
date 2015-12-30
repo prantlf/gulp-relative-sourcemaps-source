@@ -5,7 +5,8 @@ var gutil = require('gulp-util'),
     path = require('path');
 
 // Converts the relative path in file.sourceMap.sources[0] to be relative
-// not to the source files root, but to the single source file directory.
+// not to the source files base directory, but to the output directory of
+// the particular file.
 // For example, transpiling "src/folder/file.js" to "dist/folder/file.js"
 // needs the file.sourceMap.sources[0] value "../../src/folder/file.js".
 module.exports = function (options) {
