@@ -32,9 +32,9 @@ describe('relativeSourcemapsSource()', function () {
         ];
     // Simulate how gulp-sourcemaps sets paths to source files -
     // relatively to the source base directory
-    files[0].sourceMap = {sources: ['file.js']};
-    files[1].sourceMap = {sources: ['file.js']};
-    files[2].sourceMap = {sources: ['folder/file.js']};
+    files[0].sourceMap = {sources: ['file.ts']};
+    files[1].sourceMap = {sources: ['file.ts']};
+    files[2].sourceMap = {sources: ['folder/file.ts']};
 
     stream.on('data', function (file) {
       buffer.push(file);
@@ -44,9 +44,9 @@ describe('relativeSourcemapsSource()', function () {
       assert.equal(buffer.length, 3);
       // Updated paths point from the output file location in the "dist"
       // directory tree to the source file below the source base directory
-      assert.equal(buffer[0].sourceMap.sources[0], '../file.js');
-      assert.equal(buffer[1].sourceMap.sources[0], '../src/file.js');
-      assert.equal(buffer[2].sourceMap.sources[0], '../../src/folder/file.js');
+      assert.equal(buffer[0].sourceMap.sources[0], '../file.ts');
+      assert.equal(buffer[1].sourceMap.sources[0], '../src/file.ts');
+      assert.equal(buffer[2].sourceMap.sources[0], '../../src/folder/file.ts');
       done();
     });
 
