@@ -172,6 +172,12 @@ Default: `undefined`
 
 Root output directory to write the transpiled files to.  Mandatory.
 
+## Release History
+
+ * 2016-02-01   v0.1.2   Fix transpiling files fith other file extension;
+                         *.ts to *.js with TypeScript, for example.
+ * 2015-12-30   v0.1.1   Initial release.
+
 ## License
 
 MIT © [Ferdinand Prantl](http://prantl.tk)
