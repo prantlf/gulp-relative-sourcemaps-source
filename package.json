@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/eslint *.js && ./node_modules/.bin/mocha"
+    "test": "eslint *.js && mocha"
   },
   "files": [
     "index.js"
@@ -26,10 +26,10 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.7",
-    "through2": "^2.0.0"
+    "through2": "^2.0.1"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
-    "mocha": "^2.4.5"
+    "eslint": "^3.3.1",
+    "mocha": "^3.0.2"
   }
 }
