@@ -19,7 +19,7 @@ module.exports = function (options) {
   }
   return through.obj(function (file, encoding, done) {
     // Detect a file with a sourcemaps and an external content
-    if (file.sourceMap && Array.isArray(file.sourceMap.sources)) {
+    if (file.sourceMap && Array.isArray(file.sourceMap.sources) && file.sourceMap.sources.length > 0) {
       // path.dirname('folder/file.js') => 'folder'
       var sourceDir = path.dirname(file.relative),
       // path.join('/project', 'dist', 'folder') => '/project/dist/folder'
