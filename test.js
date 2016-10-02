@@ -57,4 +57,37 @@ describe('relativeSourcemapsSource()', function () {
     stream.end();
   });
 
+  it('does not crash if sourcemaps source array is empty', function (done) {
+    // Simulate transpiling to an output directory in the project root
+    var stream = relativeSourcemapsSource({dest: 'dist'}),
+        buffer = [],
+        files = [
+          // Source base directory in the project root
+          new gutil.File({
+            base: __dirname,
+            path: path.join(__dirname, 'file.d.ts')
+          })
+        ];
+    // Simulate how gulp-sourcemaps sets paths to source files
+    // which are not valid JavaScript
+    files[0].sourceMap = {sources: []};
+
+    stream.on('data', function (file) {
+      buffer.push(file);
+    });
+
+    stream.on('end', function () {
+      assert.equal(buffer.length, 1);
+      // No source list means no updates
+      assert.equal(buffer[0].sourceMap.sources.length, 0);
+      done();
+    });
+
+    files.forEach(function (file) {
+      stream.write(file);
+    });
+
+    stream.end();
+  });
+
 });
