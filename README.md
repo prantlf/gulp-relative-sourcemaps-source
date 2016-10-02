@@ -174,6 +174,7 @@ Root output directory to write the transpiled files to.  Mandatory.
 
 ## Release History
 
+ * 2016-10-02   v0.1.4   Fix running with an ampty array of source map sources.
  * 2016-26-08   v0.1.3   Upgrade dependencies
  * 2016-02-01   v0.1.2   Fix transpiling files fith other file extension;
                          *.ts to *.js with TypeScript, for example.
