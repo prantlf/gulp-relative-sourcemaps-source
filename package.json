@@ -1,6 +1,6 @@
 {
   "name": "gulp-relative-sourcemaps-source",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Converts paths to files with the sourcemaps content to be relative to the source file directory.",
   "license": "MIT",
   "repository": "prantlf/gulp-relative-sourcemaps-source",
@@ -10,7 +10,7 @@
     "url": "http://prantl.tk"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "eslint *.js && mocha"
@@ -26,10 +26,10 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.7",
-    "through2": "^2.0.1"
+    "through2": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^3.7.0",
-    "mocha": "^3.1.0"
+    "eslint": "^3.12.2",
+    "mocha": "^3.2.0"
   }
 }
