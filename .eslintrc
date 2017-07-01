@@ -18,7 +18,10 @@
     }],
     "indent": [2, 2, {
       "SwitchCase": 1,
-      "VariableDeclarator": 2
+      "VariableDeclarator": 2,
+      "CallExpression": {
+        "arguments": "first"
+      }
     }],
     "no-array-constructor": 2,
     "no-mixed-spaces-and-tabs": 2,
