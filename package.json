@@ -30,7 +30,7 @@
     "through2": "^2.0.3"
   },
   "devDependencies": {
-    "eslint": "^4.1.1",
+    "eslint": "4.1.1",
     "mocha": "^3.4.1",
     "semantic-release": "^6.3.6"
   }
