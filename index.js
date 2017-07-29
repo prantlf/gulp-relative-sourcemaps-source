@@ -23,7 +23,7 @@ module.exports = function (options) {
         file.sourceMap.sources.length > 0) {
       // path.dirname('folder/file.js') => 'folder'
       var sourceDir = path.dirname(file.relative),
-      // path.join('/project', 'dist', 'folder') => '/project/dist/folder'
+          // path.join('/project', 'dist', 'folder') => '/project/dist/folder'
           outputDir = path.join(file.cwd, options.dest, sourceDir);
       // path.join('/project/src/folder/', 'file.ts');
       var sourceFile = path.join(path.dirname(file.path),
