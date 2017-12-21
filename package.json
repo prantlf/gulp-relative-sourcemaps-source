@@ -32,6 +32,6 @@
   "devDependencies": {
     "eslint": "4.13.1",
     "mocha": "^4.0.0",
-    "semantic-release": "^8.0.0"
+    "semantic-release": "^11.0.2"
   }
 }
