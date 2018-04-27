@@ -194,6 +194,7 @@ Root output directory to write the transpiled files to.  Mandatory.
 
 ## Release History
 
+ * 2018-04-27   v1.0.0   Dropped support of Node.js 4
  * 2016-12-21   v0.1.5   Add example, update dependencies
  * 2016-10-02   v0.1.4   Fix running with an ampty array of source map sources
  * 2016-26-08   v0.1.3   Upgrade dependencies
@@ -203,4 +204,4 @@ Root output directory to write the transpiled files to.  Mandatory.
 
 ## License
 
-MIT © [Ferdinand Prantl](http://prantl.tk)
+MIT © 2015-2018 [Ferdinand Prantl](http://prantl.tk)
