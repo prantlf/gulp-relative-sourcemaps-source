@@ -1,4 +1,8 @@
-# gulp-relative-sourcemaps-source [![NPM version](https://badge.fury.io/js/gulp-relative-sourcemaps-source.png)](http://badge.fury.io/js/gulp-relative-sourcemaps-source) [![Build Status](https://travis-ci.org/prantlf/gulp-relative-sourcemaps-source.svg?branch=master)](https://travis-ci.org/prantlf/gulp-relative-sourcemaps-source) [![Dependency Status](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source.svg)](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source) [![devDependency Status](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source/dev-status.svg)](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source#info=devDependencies) [![Greenkeeper badge](https://badges.greenkeeper.io/prantlf/gulp-relative-sourcemaps-source.svg)](https://greenkeeper.io/)
+# gulp-relative-sourcemaps-source
+[![NPM version](https://badge.fury.io/js/gulp-relative-sourcemaps-source.png)](http://badge.fury.io/js/gulp-relative-sourcemaps-source)
+[![Build Status](https://travis-ci.org/prantlf/gulp-relative-sourcemaps-source.svg?branch=master)](https://travis-ci.org/prantlf/gulp-relative-sourcemaps-source)
+[![Dependency Status](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source.svg)](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source)
+[![devDependency Status](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source/dev-status.svg)](https://david-dm.org/prantlf/gulp-relative-sourcemaps-source#info=devDependencies)
 
 > Convert paths to files with the sourcemaps content to be relative to the output file directories
 
