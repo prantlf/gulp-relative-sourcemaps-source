@@ -13,9 +13,7 @@
     "node": ">=6"
   },
   "scripts": {
-    "test": "eslint *.js && mocha",
-    "semantic-release": "semantic-release",
-    "travis-deploy-once": "travis-deploy-once"
+    "test": "eslint *.js && mocha"
   },
   "files": [
     "index.js"
@@ -28,12 +26,10 @@
   ],
   "dependencies": {
     "gulp-util": "^3.0.8",
-    "through2": "^2.0.3"
+    "through2": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "5.5.0",
-    "mocha": "^5.2.0",
-    "semantic-release": "^15.9.14",
-    "travis-deploy-once": "^5.0.7"
+    "eslint": "5.15.2",
+    "mocha": "^6.0.2"
   }
 }
