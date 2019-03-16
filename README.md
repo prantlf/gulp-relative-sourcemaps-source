@@ -208,4 +208,4 @@ Root output directory to write the transpiled files to.  Mandatory.
 
 ## License
 
-MIT © 2015-2018 [Ferdinand Prantl](http://prantl.tk)
+MIT © 2015-2019 [Ferdinand Prantl](http://prantl.tk)
