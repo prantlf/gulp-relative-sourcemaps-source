@@ -1,0 +1,27 @@
+{
+  "name": "concatenated-files-example",
+  "private": true,
+  "description": "Example of an application, that uses a concatenated distributed file with a single source map pointing to the separate source files.",
+  "scripts": {
+    "prepare": "gulp",
+    "start": "http-server -c 5",
+    "test": "node --experimental-modules src/main.js && node --experimental-modules dist/bundle.js"
+  },
+  "devDependencies": {
+    "del": "4.1.1",
+    "eslint": "5.16.0",
+    "eslint-friendly-formatter": "4.0.1",
+    "gulp": "3.9.1",
+    "gulp-eslint": "5.0.0",
+    "gulp-rename": "1.4.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-terser": "1.2.0",
+    "gulp-util": "3.0.8",
+    "http-server": "0.11.1",
+    "rollup": "1.14.4",
+    "rollup-stream": "1.24.1",
+    "run-sequence": "2.2.1",
+    "vinyl-buffer": "1.0.1",
+    "vinyl-source-stream": "2.0.0"
+  }
+}

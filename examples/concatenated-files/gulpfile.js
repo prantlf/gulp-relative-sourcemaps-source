@@ -3,7 +3,11 @@ const eslint = require('gulp-eslint')
 const gulp = require('gulp')
 const gutil = require('gulp-util')
 const relativeSourcemapsSource = require('gulp-relative-sourcemaps-source')
+const rollup = require('rollup-stream')
+const rename = require('gulp-rename')
 const run = require('run-sequence')
+const buffer = require('vinyl-buffer')
+const source = require('vinyl-source-stream')
 const sourcemaps = require('gulp-sourcemaps')
 const terser = require('gulp-terser')
 
@@ -19,16 +23,23 @@ gulp.task('check', function () {
 })
 
 gulp.task('dist', function () {
-  return gulp.src(['src/**/*.js'])
-    .pipe(sourcemaps.init())
+  return rollup({
+    input: 'src/main.js',
+    format: 'es',
+    sourcemap: true
+  })
+    .pipe(source('main.js', './src'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({ loadMaps: true }))
     .pipe(terser().on('error', gutil.log))
-    // sources[0] would be relative to the output directory root
+    // sources[] would be relative to the output directory root
     // without the relativeSourcemapsSource plugin 
+    .pipe(rename('bundle.js'))
     .pipe(relativeSourcemapsSource({ dest: 'dist' }))
     .pipe(sourcemaps.write('.', {
       includeContent: false,
-      // sources[0] will be set to the relative path to the source
-      // file - relative from the directory of every built file,
+      // sources[] will be set to the relative paths to the source
+      // files - relative from the directory of every built file,
       // that is why sourceRoot in map files should be always '.'
       sourceRoot: '.'
     }))

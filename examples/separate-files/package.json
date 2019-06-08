@@ -1,17 +1,22 @@
 {
   "name": "separate-files-example",
-  "private": "true",
-  "description": "Example of an application, that uses separate distributed files with separate source maps.",
+  "private": true,
+  "description": "Example of an application, that uses separate distributed files with separate source maps pointing to the separate source files.",
+  "scripts": {
+    "prepare": "gulp",
+    "start": "http-server -c 5",
+    "test": "node --experimental-modules src/main.js && node --experimental-modules dist/main.js"
+  },
   "devDependencies": {
     "del": "4.1.1",
     "eslint": "5.16.0",
     "eslint-friendly-formatter": "4.0.1",
     "gulp": "3.9.1",
     "gulp-eslint": "5.0.0",
-    "gulp-relative-sourcemaps-source": "1.0.0",
     "gulp-sourcemaps": "2.6.5",
-    "gulp-uglify": "3.0.2",
+    "gulp-terser": "1.2.0",
     "gulp-util": "3.0.8",
+    "http-server": "0.11.1",
     "run-sequence": "2.2.1"
   }
 }
