@@ -25,11 +25,11 @@
     "sources"
   ],
   "dependencies": {
-    "gulp-util": "^3.0.8",
-    "through2": "^3.0.1"
+    "gulp-util": "3.0.8",
+    "through2": "3.0.1"
   },
   "devDependencies": {
     "eslint": "5.16.0",
-    "mocha": "^6.1.4"
+    "mocha": "6.1.4"
   }
 }
