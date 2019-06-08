@@ -29,7 +29,7 @@
     "through2": "^3.0.1"
   },
   "devDependencies": {
-    "eslint": "5.15.3",
-    "mocha": "^6.0.2"
+    "eslint": "5.16.0",
+    "mocha": "^6.1.4"
   }
 }
