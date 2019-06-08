@@ -1,0 +1,17 @@
+{
+  "name": "separate-files-example",
+  "private": "true",
+  "description": "Example of an application, that uses separate distributed files with separate source maps.",
+  "devDependencies": {
+    "del": "4.1.1",
+    "eslint": "5.16.0",
+    "eslint-friendly-formatter": "4.0.1",
+    "gulp": "3.9.1",
+    "gulp-eslint": "5.0.0",
+    "gulp-relative-sourcemaps-source": "1.0.0",
+    "gulp-sourcemaps": "2.6.5",
+    "gulp-uglify": "3.0.2",
+    "gulp-util": "3.0.8",
+    "run-sequence": "2.2.1"
+  }
+}
