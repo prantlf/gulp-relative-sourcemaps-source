@@ -3,7 +3,6 @@ const eslint = require('gulp-eslint')
 const gulp = require('gulp')
 const gutil = require('gulp-util')
 const relativeSourcemapsSource = require('gulp-relative-sourcemaps-source')
-const run = require('run-sequence')
 const sourcemaps = require('gulp-sourcemaps')
 const terser = require('gulp-terser')
 
@@ -35,6 +34,4 @@ gulp.task('dist', function () {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('default', function (done) {
-  run('clean', ['check', 'dist'], done)
-})
+gulp.task('default', gulp.series('check', 'dist'))

@@ -11,7 +11,7 @@
     "del": "4.1.1",
     "eslint": "5.16.0",
     "eslint-friendly-formatter": "4.0.1",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-eslint": "5.0.0",
     "gulp-relative-sourcemaps-source": "1.1.x",
     "gulp-rename": "1.4.0",
@@ -21,7 +21,6 @@
     "http-server": "0.11.1",
     "rollup": "1.14.4",
     "rollup-stream": "1.24.1",
-    "run-sequence": "2.2.1",
     "vinyl-buffer": "1.0.1",
     "vinyl-source-stream": "2.0.0"
   }

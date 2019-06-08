@@ -11,13 +11,12 @@
     "del": "4.1.1",
     "eslint": "5.16.0",
     "eslint-friendly-formatter": "4.0.1",
-    "gulp": "3.9.1",
+    "gulp": "4.0.2",
     "gulp-eslint": "5.0.0",
     "gulp-relative-sourcemaps-source": "1.1.x",
     "gulp-sourcemaps": "2.6.5",
     "gulp-terser": "1.2.0",
     "gulp-util": "3.0.8",
-    "http-server": "0.11.1",
-    "run-sequence": "2.2.1"
+    "http-server": "0.11.1"
   }
 }

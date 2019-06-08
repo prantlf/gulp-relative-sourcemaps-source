@@ -5,7 +5,6 @@ const gutil = require('gulp-util')
 const relativeSourcemapsSource = require('gulp-relative-sourcemaps-source')
 const rollup = require('rollup-stream')
 const rename = require('gulp-rename')
-const run = require('run-sequence')
 const buffer = require('vinyl-buffer')
 const source = require('vinyl-source-stream')
 const sourcemaps = require('gulp-sourcemaps')
@@ -46,6 +45,4 @@ gulp.task('dist', function () {
     .pipe(gulp.dest('dist'))
 })
 
-gulp.task('default', function (done) {
-  run('clean', ['check', 'dist'], done)
-})
+gulp.task('default', gulp.series('check', 'dist'))
