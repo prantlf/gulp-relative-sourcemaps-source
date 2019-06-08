@@ -13,6 +13,7 @@
     "eslint-friendly-formatter": "4.0.1",
     "gulp": "3.9.1",
     "gulp-eslint": "5.0.0",
+    "gulp-relative-sourcemaps-source": "1.1.x",
     "gulp-sourcemaps": "2.6.5",
     "gulp-terser": "1.2.0",
     "gulp-util": "3.0.8",
